@@ -35,10 +35,14 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :production do
-  # gem 'sqlite3'
+  gem 'pg', '0.20.0'
 end
+
+  # gem 'sqlite3'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'sqlite3', '1.3.13'
   gem 'byebug', platform: :mri
 end
 
